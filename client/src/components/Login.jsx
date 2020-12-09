@@ -4,11 +4,11 @@ import { v4 as uuidV4 } from 'uuid'
 
 export default function Login({onIdSubmit}) {
 
-    const idRef = useRef();
+    const idRef = useRef()
     const handleSubmit = e => {
-        e.preventDefault();
+        e.preventDefault()
         onIdSubmit(idRef.current.value)
-    };
+    }
     const createNewId = () => {
         onIdSubmit(uuidV4())
     }
